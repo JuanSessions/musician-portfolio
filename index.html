@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- animation style -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- own style -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>Music Portfolio</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <!-- navigation -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home" title="Home">
+                        <img src="img/home.png" alt="" width="50" height="auto" class="nav-icons">
+                    </a>
+                </li>
+                <li>
+                    <a href="#about" title="About">
+                        <img src="img/about.png" alt="" width="50" class="nav-icons">
+                    </a>
+                </li>
+                <li>
+                    <a href="#music" title="Music">
+                        <img src="img/headphone.png" alt="" width="50" class="nav-icons">
+                    </a>
+                </li>
+                <li>
+                    <a href="#event" title="Events">
+                        <img src="img/calendar.png" alt="" width="50" class="nav-icons">
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" title="Contact">
+                        <img src="img/envelope.png" alt="" width="50" class="nav-icons">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- background video -->
+        <section id="home" class="video-container cinemagraph">
+            <video autoplay muted loop class="bg__video">
+                <source src="img/person-playing-guitar.mp4" type="video/mp4">
+            </video>
+        </section>
+    </header>
+
+    <!-- main -->
+    <main>
+        <!-- about -->
+        <section id="about" class="boxes parallax" data-aos="fade-up">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga quae blanditiis praesentium amet
+                distinctio at fugit molestiae. Praesentium, maiores voluptatem?</p>
+        </section>
+
+        <!-- music -->
+        <section id="music" class="boxes parallax" data-aos="fade-down">
+            <h2>Music</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+        </section>
+
+        <!-- events -->
+        <section id="event" class="boxes parallax" data-aos="fade-up">
+            <h2>Events</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+        </section>
+
+        <!-- contact -->
+        <section id="contact" class="boxes parallax" data-aos="fade-down">
+            <h2>Contact</h2>
+            <input type="text" name="" id="">
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <p>Created by Natalia & Juan</p>
+    </footer>
+
+    <!-- animation for content boxes-->
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
