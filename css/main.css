@@ -10,13 +10,13 @@ html {
 /* header =============================== */
 
 header {
-  width:100%;
+  width:100wh;
   height: 100vh;
 }
 
 .video-container {
   z-index: -100;
-  width: 100%;
+  width: 100wh;
   height: 100vh;
   overflow:hidden;
   position: fixed;
@@ -24,18 +24,19 @@ header {
   left:0;
 }
 
+
 /* nav ================================== */
 
 nav {
   position: fixed;
   z-index: 1; 
   top: 0;
+
 }
 
 nav ul {
   margin-top: 2rem;
 }
-
 
 nav ul li {
   list-style: none;
@@ -44,11 +45,7 @@ nav ul li {
 nav ul li a {
   display: inline-block;
   padding: 0.5rem 1rem;
-  font-size: 1rem;
-  font-weight: bold;
   text-decoration: none;
-  text-transform: uppercase;
-  color: #f3f1d9;
   transition: 0.5s;
 }
 
@@ -62,12 +59,40 @@ nav ul li a {
 
 /* content ========================== */
 
-.boxes {
-  width: 70%;
-  height: 80vh;
-  margin: 2rem auto;
-  padding: 1rem;
-  background-color: rgba(172, 151, 147, 0.8);
-  z-index: 2; 
+main {
+  padding-left: 4.5rem;
 }
 
+main section{
+  width: 100%;
+  margin: 0 auto;
+  /* background-color: rgba(161, 161, 161, 0.3); */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+}
+
+.boxes {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 80vh;
+  /* margin-top: -15rem; */
+  padding: 1rem;
+  background-color: rgba(173, 173, 173, 0.7);
+  /* z-index: 2; */
+  /* border: 1px solid #000; */
+
+}
+
+.hidden-boxes {
+  height: 10rem;
+  width: 30%;
+  
+}
+
+.higher {
+  margin-top: -10rem;
+}

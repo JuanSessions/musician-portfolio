@@ -15,7 +15,7 @@
 
 <body>
     <!-- header -->
-    <header>
+    <header id="home">
         <!-- navigation -->
         <nav>
             <ul>
@@ -48,8 +48,8 @@
         </nav>
 
         <!-- background video -->
-        <section id="home" class="video-container cinemagraph">
-            <video autoplay muted loop class="bg__video">
+        <section class="video-container">
+            <video autoplay muted loop>
                 <source src="img/person-playing-guitar.mp4" type="video/mp4">
             </video>
         </section>
@@ -57,29 +57,50 @@
 
     <!-- main -->
     <main>
-        <!-- about -->
-        <section id="about" class="boxes" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="50">
-            <h2>About</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga quae blanditiis praesentium amet
-                distinctio at fugit molestiae. Praesentium, maiores voluptatem?</p>
-        </section>
+        <section id="two-column">
 
-        <!-- music -->
-        <section id="music" class="boxes parallax" data-aos="fade-left" data-aos-duration="1000">
-            <h2>Music</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
-        </section>
+            <!-- hidden box -->
+            <section class="hidden-boxes"></section>
 
-        <!-- events -->
-        <section id="event" class="boxes parallax" data-aos="fade-right" data-aos-duration="1000">
-            <h2>Events</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
-        </section>
+            <!-- about -->
+            <section id="about" class="boxes" data-aos="zoom-out-down" data-aos-duration="1000" data-aos-delay="50">
+                <h2>About</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga quae blanditiis praesentium amet
+                    distinctio at fugit molestiae. Praesentium, maiores voluptatem?</p>
+            </section>
 
-        <!-- contact -->
-        <section id="contact" class="boxes parallax" data-aos="fade-left" data-aos-duration="1000">
-            <h2>Contact</h2>
-            <input type="text" name="" id="">
+            <!-- music -->
+            <section id="music" class="boxes higher" data-aos="fade-right" data-aos-duration="1000">
+                <h2>Music</h2>
+                <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p> -->
+                <br>
+                <audio controls>
+                    <source src="horse.ogg" type="audio/ogg">
+                    <source src="horse.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </section>
+
+            <!-- hidden box -->
+            <section class="hidden-boxes"></section>
+            <section class="hidden-boxes"></section>
+
+            <!-- events -->
+            <section id="event" class="boxes higher" data-aos="fade-left" data-aos-duration="1000">
+                <h2>Events</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+            </section>
+
+            <!-- hidden box -->
+            <section class="hidden-boxes"></section>
+            <section class="hidden-boxes"></section>
+
+            <!-- contact -->
+            <section id="contact" class="boxes" data-aos="zoom-out-right" data-aos-duration="1000">
+                <h2>Contact</h2>
+                <!-- <input type="text" name="" id=""> -->
+            </section>
+
         </section>
     </main>
 
