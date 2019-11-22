@@ -66,7 +66,6 @@ main {
 main section{
   width: 100%;
   margin: 0 auto;
-  /* background-color: rgba(161, 161, 161, 0.3); */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -79,20 +78,32 @@ main section{
   flex-direction: column;
   width: 40%;
   height: 80vh;
-  /* margin-top: -15rem; */
   padding: 1rem;
   background-color: rgba(173, 173, 173, 0.7);
-  /* z-index: 2; */
-  /* border: 1px solid #000; */
-
 }
 
-.hidden-boxes {
-  height: 10rem;
-  width: 30%;
-  
+#about {
+  margin-top: 30rem;
+  order: 1;
 }
 
-.higher {
+#music {
+  margin-top: 10rem;
+  order: 2;
+}
+
+#event {
   margin-top: -10rem;
+  order: 4;
+}
+
+#contact {
+  margin-top: 10rem;
+  order: 3;
+}
+
+/* player ======================= */
+
+#player {
+  width: 100%;
 }
