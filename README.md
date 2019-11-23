@@ -1,4 +1,4 @@
-# Music Portfolio
+# Musician Portfolio
 
 This is a small project from Juan and Natalia.
 
