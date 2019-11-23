@@ -76,6 +76,11 @@ main {
   padding-left: 4.5rem;
 }
 
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
 main section{
   width: 100%;
   margin: 0 auto;
