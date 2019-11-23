@@ -70,6 +70,12 @@ nav ul li a {
   width: 3.2rem;
 }
 
+#scroll-down {
+  position: relative;
+  bottom: -10rem;
+  left: 0;
+}
+
 /* content ========================== */
 
 main {
