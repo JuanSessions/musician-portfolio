@@ -21,12 +21,12 @@
 	position: relative;
 	/* display: block; */
 	/* float: right; */
-	padding: 0.8em;
 	/* width: 50%; */
+	padding: 0.8em;
 	border: none;
 	border-radius: 0;
 	background: #f0f0f0;
-	color: #aaa;
+	color: #2c2b2c;
 	font-weight: bold;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	-webkit-appearance: none;
@@ -40,7 +40,7 @@
 	display: inline-block;
 	padding: 1em 2em;
 	width: 40%;
-	color: #6a7989;
+	color: #000;
 	font-weight: bold;
 	font-size: 1em;
 	-webkit-font-smoothing: antialiased;
@@ -69,7 +69,8 @@
 	padding: 0.85em 0em;
 	width: 100%;
 	background: transparent;
-	color: #DDE2E2;
+	color: #f1f7f7;
+	font-size: 1rem;
 	opacity: 0;
 	-webkit-transition: opacity 0.3s;
 	transition: opacity 0.3s;
@@ -103,7 +104,7 @@
 }
 
 .input__label--jiro::before {
-	border-top: 2px solid #6a7989;
+	border-top: 2px solid #000;
 	-webkit-transform: translate3d(0, 100%, 0) translate3d(0, -2px, 0);
 	transform: translate3d(0, 100%, 0) translate3d(0, -2px, 0);
 	-webkit-transition-delay: 0.3s;
@@ -112,7 +113,7 @@
 
 .input__label--jiro::after {
 	z-index: -1;
-	background: #6a7989;
+	background: #000;
 	-webkit-transform: scale3d(1, 0, 1);
 	transform: scale3d(1, 0, 1);
 	-webkit-transform-origin: 50% 0%;
