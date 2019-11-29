@@ -13,9 +13,12 @@
         </script>
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Kanit|Krona+One&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/3c09bcb51a.js" crossorigin="anonymous"></script>
     <!-- own style -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/audio-player.css">
+    <link rel="stylesheet" href="css/contact-form.css">
 
     <title>Musician Portfolio</title>
 </head>
@@ -147,7 +150,56 @@
             <!-- contact -->
             <section id="contact" class="boxes" data-aos="zoom-out-right" data-aos-duration="1000"
                 data-aos-easing="ease-in-circ">
-                <h2>Contact</h2>
+
+
+
+                <section class="contact-form">
+
+                    <h2>Contact</h2>
+
+                    <span class="input input--jiro">
+                        <input class="input__field input__field--jiro" type="text" id="name" />
+                        <label class="input__label input__label--jiro" for="name">
+                            <span class="input__label-content input__label-content--jiro">Name</span>
+                        </label>
+                    </span>
+
+                    <span class="input input--jiro">
+                        <input class="input__field input__field--jiro" type="text" id="email" />
+                        <label class="input__label input__label--jiro" for="email">
+                            <span class="input__label-content input__label-content--jiro">Email</span>
+                        </label>
+                    </span>
+
+                    <span class="input input--jiro">
+                        <input class="input__field input__field--jiro" type="text" id="subject" />
+                        <label class="input__label input__label--jiro" for="subject">
+                            <span class="input__label-content input__label-content--jiro">Subject</span>
+                        </label>
+                    </span>
+
+                    <span class="input input--jiro">
+                        <textarea name="msg" id="" class="input__field input__field--jiro" cols="30"
+                            rows="3"></textarea>
+
+                        <label class="input__label input__label--jiro" for="msg">
+                            <span class="input__label-content input__label-content--jiro">Your message ...</span>
+                        </label>
+                    </span>
+
+                    <button id="send-btn" class="btn">send</button>
+
+                    <!-- social media -->
+                    <section id="social-media">
+                        <ul>
+                            <li><i class="fab fa-soundcloud"></i></li>
+                            <li><i class="fab fa-facebook-square"></i></li>
+                            <li><i class="fab fa-twitter-square"></i></li>
+                        </ul>
+                    </section>
+                </section>
+
+
             </section>
 
         </section>
