@@ -20,9 +20,9 @@ header {
 }
 
 h1 {
-  /* position: absolute;
-  top: 5rem;
-  right: 1rem; */
+  position: relative;
+  top: 2rem;
+  right: 2rem;
   /* bottom: 0;
   right: 0; */
   /* padding: 5rem 4rem 3rem; */
@@ -196,7 +196,7 @@ main section {
 
 /* player ======================= */
 
-#player {
+.player {
   width: 100%;
 }
 
@@ -229,13 +229,12 @@ footer a:hover {
 /* extra small devices (phones, less than 576px) */
 @media only screen and (max-width: 575px) {
   main {
-    border: 5px solid orange;
-    margin-top: -82rem;
+    /* border: 5px solid orange; */
+    margin-top: -63rem;
   }
 
   .boxes {
-    width: 80%;
-    height: 60vh;
+    width: 85%;
   }
 
   #music {
@@ -253,10 +252,10 @@ footer a:hover {
   }
 
     h1 {
-    position: absolute;
+    position: relative;
     top: 2rem;
-    right: 2rem;
-    font-size: 2rem;
+    left: 5rem;
+    font-size: 1.5rem;
   }
 
   #scroll-down {
@@ -269,13 +268,12 @@ footer a:hover {
 
 @media only screen and (min-width: 576px) {
   main {
-    border: 5px solid rgb(0, 174, 255);
+    /* border: 5px solid rgb(0, 174, 255); */
     margin-top: -80rem;
   }
 
   .boxes {
     width: 75%;
-    height: 60vh;
   }
 
   #event {
@@ -306,7 +304,7 @@ footer a:hover {
 /* Small devices (landscape phones, less than 768px) */
 @media only screen and (min-width: 768px) {
   main {
-    border: 5px solid yellow;
+    /* border: 5px solid yellow; */
     margin-top: -80rem;
   }
 
@@ -320,9 +318,9 @@ footer a:hover {
   }
 
   h1 {
-    position: absolute;
+    position: relative;
     top: 2rem;
-    right: 2rem;
+    right: -8rem;
     font-size: 2.5rem;
   }
 
@@ -337,7 +335,7 @@ footer a:hover {
 /* Medium devices (tablets, less than 992px) */
 @media only screen and (min-width: 992px) {
   main {
-    border: 5px solid blueviolet;
+    /* border: 5px solid blueviolet; */
     margin-top: -50rem;
   }
 
@@ -361,7 +359,7 @@ footer a:hover {
 /* Large devices (desktops, less than 1200px) */
 @media only screen and (min-width: 1200px) {
   main {
-    border: 5px solid green;
+    /* border: 5px solid green; */
     margin-top: -10rem;
   }
 
