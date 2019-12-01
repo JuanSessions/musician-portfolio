@@ -5,7 +5,11 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
   font-family: 'Kanit', sans-serif;
+  background-color: rgb(14, 13, 13);
 }
 
 /* header =============================== */
@@ -16,10 +20,12 @@ header {
 }
 
 h1 {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding: 5rem 4rem 3rem;
+  /* position: absolute;
+  top: 5rem;
+  right: 1rem; */
+  /* bottom: 0;
+  right: 0; */
+  /* padding: 5rem 4rem 3rem; */
   font-family: 'Krona One', sans-serif;
   font-size: 2.8rem;
   letter-spacing: -1px;
@@ -29,7 +35,7 @@ h1 {
 
 video {
   width: 100%;
-  overflow:hidden;
+  overflow: hidden;
   position: fixed;
   top:0;
   left:0;
@@ -216,4 +222,169 @@ footer a {
 
 footer a:hover {
   color: rgb(253, 196, 109);
+}
+
+/* responsive ===================== */
+
+/* extra small devices (phones, less than 576px) */
+@media only screen and (max-width: 575px) {
+  main {
+    border: 5px solid orange;
+    margin-top: -82rem;
+  }
+
+  .boxes {
+    width: 80%;
+    height: 60vh;
+  }
+
+  #music {
+    margin-top: 5rem;
+  }
+
+  #event {
+    margin-top: 5rem;
+    order: 3;
+  }
+
+  #contact {
+    margin-top: 5rem;
+    order: 4;
+  }
+
+    h1 {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+  }
+
+  #scroll-down {
+    position: relative;
+    top: 3.5rem;
+    left: 0;
+  }
+
+}
+
+@media only screen and (min-width: 576px) {
+  main {
+    border: 5px solid rgb(0, 174, 255);
+    margin-top: -80rem;
+  }
+
+  .boxes {
+    width: 75%;
+    height: 60vh;
+  }
+
+  #event {
+    margin-top: 5rem;
+    order: 3;
+  }
+
+  #contact {
+    margin-top: 5rem;
+    order: 4;
+  }
+
+  h1 {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+  }
+
+  #scroll-down {
+    position: relative;
+    top: 3.5rem;
+    left: 0;
+  }
+
+}
+  
+/* Small devices (landscape phones, less than 768px) */
+@media only screen and (min-width: 768px) {
+  main {
+    border: 5px solid yellow;
+    margin-top: -80rem;
+  }
+
+  .boxes {
+    width: 70%;
+    height: 65vh;
+  }
+
+  #contact {
+    margin-top: 3rem;
+  }
+
+  h1 {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2.5rem;
+  }
+
+  #scroll-down {
+    position: relative;
+    top: 5rem;
+    left: 0;
+  }
+
+}
+  
+/* Medium devices (tablets, less than 992px) */
+@media only screen and (min-width: 992px) {
+  main {
+    border: 5px solid blueviolet;
+    margin-top: -50rem;
+  }
+
+  .boxes {
+    width: 45%;
+    height: 60vh;
+  }
+
+  #event {
+    margin-top: -15rem;
+    order: 4;
+  }
+
+  #contact {
+    margin-top: 5rem;
+    order: 3;
+  }
+
+}
+  
+/* Large devices (desktops, less than 1200px) */
+@media only screen and (min-width: 1200px) {
+  main {
+    border: 5px solid green;
+    margin-top: -10rem;
+  }
+
+  .boxes {
+    width: 35%;
+    height: 80vh;
+  }
+
+  #event {
+    margin-top: -15rem;
+  }
+
+  h1 {
+    position: relative;
+    top: 35rem;
+    left: 45rem;
+    font-size: 3rem;
+  }
+
+  #scroll-down {
+    position: relative;
+    top: 13rem;
+    left: 0;
+  }
+
 }
