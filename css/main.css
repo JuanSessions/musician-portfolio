@@ -5,7 +5,13 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
   font-family: 'Kanit', sans-serif;
+  background-color: rgb(14, 13, 13);
+  overflow-x: hidden;
 }
 
 /* header =============================== */
@@ -16,10 +22,12 @@ header {
 }
 
 h1 {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding: 5rem 4rem 3rem;
+  position: relative;
+  top: 2rem;
+  right: 2rem;
+  /* bottom: 0;
+  right: 0; */
+  /* padding: 5rem 4rem 3rem; */
   font-family: 'Krona One', sans-serif;
   font-size: 2.8rem;
   letter-spacing: -1px;
@@ -27,14 +35,13 @@ h1 {
   text-shadow: 0 0 15px #000;
 }
 
-.video-container {
-  z-index: -100;
-  width: 100wh;
-  height: 100vh;
+video {
+  width: 100%;
   overflow: hidden;
   position: fixed;
-  top: 0;
-  left: 0;
+  top:0;
+  left:0;
+  z-index: -1;
 }
 
 
@@ -91,13 +98,13 @@ h2 {
 main section {
   width: 100%;
   margin: 0 auto;
+  padding-bottom: 5rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   /* justify-content: space-between; */
   /* align-items: center; */
   transition: transform 0.6s cubic-bezier(0.6, 0.04, 0.98, 0.335);
-
 }
 
 .boxes {
@@ -130,23 +137,6 @@ main section {
   text-align: justify;
 }
 
-#info-btn {
-  width: inherit;
-  margin: 0 auto;
-}
-
-.btn {
-  padding: 0.5rem 1rem;
-  border-radius: 0.25em;
-  color: #000;
-  box-shadow: -1px 4px 12px 0px rgba(0, 0, 0, 0.32);
-}
-
-.btn:hover {
-  color: rgb(189, 187, 187);
-  background-color: rgb(36, 35, 35);
-}
-
 #music {
   margin-top: 10rem;
   order: 2;
@@ -162,8 +152,239 @@ main section {
   order: 3;
 }
 
+#contact h2 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.contact-form {
+    width: 80%;
+    height: 60%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+#social-media ul {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+/* contact icons */
+.fab {
+  font-size: 2rem;
+}
+
+.fab:hover {
+  font-size: 2.5rem;
+}
+
+
+/* buttons ==================== */
+
+.btn {
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25em;
+  color: #000;
+  box-shadow: -1px 4px 12px 0px rgba(0, 0, 0, 0.32);
+}
+
+.btn:hover {
+  color: rgb(189, 187, 187);
+  background-color: rgb(36, 35, 35);
+}
+
 /* player ======================= */
 
-#player {
+.player {
   width: 100%;
+}
+
+/* footer ====================== */
+
+footer {
+  height: 3rem;
+  background-color: rgb(14, 14, 14);
+  color: #fff;
+
+  box-shadow: -1px -4px 9px 0px rgba(0,0,0,0.94);
+}
+
+footer p {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: rgb(253, 196, 109);
+}
+
+/* responsive ===================== */
+
+/* extra small devices (phones, less than 576px) */
+@media only screen and (max-width: 575px) {
+  main {
+    /* border: 5px solid orange; */
+    margin-top: -63rem;
+  }
+
+  .boxes {
+    width: 85%;
+  }
+
+  #music {
+    margin-top: 5rem;
+  }
+
+  #event {
+    margin-top: 5rem;
+    order: 3;
+  }
+
+  #contact {
+    margin-top: 5rem;
+    order: 4;
+  }
+
+    h1 {
+    position: relative;
+    top: 2rem;
+    left: 5rem;
+    font-size: 1.5rem;
+  }
+
+  #scroll-down {
+    position: relative;
+    top: 3.5rem;
+    left: 0;
+  }
+
+}
+
+@media only screen and (min-width: 576px) {
+  main {
+    /* border: 5px solid rgb(0, 174, 255); */
+    margin-top: -80rem;
+  }
+
+  .boxes {
+    width: 75%;
+  }
+
+  #event {
+    margin-top: 5rem;
+    order: 3;
+  }
+
+  #contact {
+    margin-top: 5rem;
+    order: 4;
+  }
+
+  h1 {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+  }
+
+  #scroll-down {
+    position: relative;
+    top: 3.5rem;
+    left: 0;
+  }
+
+}
+  
+/* Small devices (landscape phones, less than 768px) */
+@media only screen and (min-width: 768px) {
+  main {
+    /* border: 5px solid yellow; */
+    margin-top: -80rem;
+  }
+
+  .boxes {
+    width: 70%;
+    height: 65vh;
+  }
+
+  #contact {
+    margin-top: 3rem;
+  }
+
+  h1 {
+    position: relative;
+    top: 2rem;
+    right: -8rem;
+    font-size: 2.5rem;
+  }
+
+  #scroll-down {
+    position: relative;
+    top: 5rem;
+    left: 0;
+  }
+
+}
+  
+/* Medium devices (tablets, less than 992px) */
+@media only screen and (min-width: 992px) {
+  main {
+    /* border: 5px solid blueviolet; */
+    margin-top: -50rem;
+  }
+
+  .boxes {
+    width: 45%;
+    height: 60vh;
+  }
+
+  #event {
+    margin-top: -15rem;
+    order: 4;
+  }
+
+  #contact {
+    margin-top: 5rem;
+    order: 3;
+  }
+
+}
+  
+/* Large devices (desktops, less than 1200px) */
+@media only screen and (min-width: 1200px) {
+  main {
+    /* border: 5px solid green; */
+    margin-top: -10rem;
+  }
+
+  .boxes {
+    width: 35%;
+    height: 80vh;
+  }
+
+  #event {
+    margin-top: -15rem;
+  }
+
+  h1 {
+    position: relative;
+    top: 35rem;
+    left: 45rem;
+    font-size: 3rem;
+  }
+
+  #scroll-down {
+    position: relative;
+    top: 13rem;
+    left: 0;
+  }
 }
