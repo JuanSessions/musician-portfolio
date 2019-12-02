@@ -77,8 +77,8 @@
         <section>
 
             <!-- about -->
-            <section id="about" class="boxes" data-aos="zoom-out-down" data-aos-duration="1000" data-aos-delay="50"
-                data-aos-easing="ease-in-circ">
+            <section id="about" class="boxes aos-animation" data-aos="fade-left" data-aos-duration="1000"
+                data-aos-delay="50" data-aos-easing="ease-in-circ">
                 <h2>About</h2>
                 <img id="about-img" src="img/men-guitar-960-720.jpg" alt="Musician" width="430">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga quae blanditiis praesentium amet
@@ -90,7 +90,7 @@
 
 
             <!-- music -->
-            <section id="music" class="boxes higher" data-aos="fade-right" data-aos-duration="1000"
+            <section id="music" class="boxes aos-animation" data-aos="fade-right" data-aos-duration="1000"
                 data-aos-easing="ease-in-circ">
                 <h2>Music</h2>
 
@@ -140,7 +140,7 @@
 
 
             <!-- events -->
-            <section id="event" class="boxes higher" data-aos="fade-left" data-aos-duration="1000"
+            <section id="event" class="boxes aos-animation" data-aos="fade-left" data-aos-duration="1000"
                 data-aos-easing="ease-in-circ">
                 <h2>Events</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
@@ -148,7 +148,7 @@
 
 
             <!-- contact -->
-            <section id="contact" class="boxes" data-aos="zoom-out-right" data-aos-duration="1000"
+            <section id="contact" class="boxes aos-animation" data-aos="zoom-out-right" data-aos-duration="1000"
                 data-aos-easing="ease-in-circ">
 
                 <section class="contact-form">
@@ -204,15 +204,21 @@
 
     <!-- footer -->
     <footer>
-        <p>Build by <a href="https://github.com/natalialexandra" target="_blank" title="Natalia's GitHub">Natalia</a> &
-            <a href="https://github.com/JuanSessions" arget="_blank" title="Juan's GitHub">Juan</a></p>
+        <p>Build by <a href="https://github.com/natalialexandra" target="_blank"
+                title="visit Natalia on GitHub">Natalia</a> &
+            <a href="https://github.com/JuanSessions" target="_blank" title="visit Juan on GitHub">Juan</a></p>
     </footer>
 
     <!-- animation for content boxes-->
     <script>
-        AOS.init();
+        AOS.init({
+            offset: 120,
+            duration: 500,
+            disable: 'mobile'
+        });
     </script>
 
+    <script src="js/aos-animation.js"></script>
     <script src="js/audio-player.js"></script>
 </body>
 
