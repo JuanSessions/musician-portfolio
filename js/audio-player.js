@@ -67,7 +67,9 @@ $('button').on('click', function () {
 
     if (self.hasClass('rw')) {
         player.addClass('rwing');
-        rewind = setInterval(function () { audio[0].currentTime -= .3; }, 100);
+        rewind = setInterval(function () {
+            audio[0].currentTime -= .3;
+        }, 100);
     }
 }).on('mouseup', function () {
     var self = $(this);
