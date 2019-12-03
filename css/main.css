@@ -17,7 +17,7 @@ body {
 /* header =============================== */
 
 header {
-  width: 100wh;
+  width: 100vw;
   height: 100vh;
 }
 
@@ -36,8 +36,8 @@ h1 {
   width: 100%;
   overflow: hidden;
   position: fixed;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   z-index: -1;
 }
 
@@ -110,7 +110,7 @@ main section {
   width: 40%;
   height: 80vh;
   padding: 1rem;
-  background-color: rgba(173, 173, 173, 0.7);
+  background-color: rgba(173, 173, 173, 0.5);
   box-shadow: 0px 3px 12px 5px rgba(0, 0, 0, 0.64);
 }
 
@@ -161,10 +161,10 @@ main section {
 }
 
 .contact-form {
-    width: 80%;
-    height: 60%;
-    margin: 0 auto;
-    margin-bottom: 1rem;
+  width: 80%;
+  height: 60%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
 }
 
 textarea {
@@ -173,7 +173,7 @@ textarea {
 
 #social-media ul {
   width: 100%;
-  margin-top: 3rem;
+  margin-top: 2rem;
   display: flex;
   justify-content: space-around;
   list-style: none;
@@ -196,6 +196,7 @@ textarea {
   padding: 0.5rem 1rem;
   border-radius: 0.25em;
   color: #000;
+  background-color: rgb(158, 151, 151);
   box-shadow: -1px 4px 12px 0px rgba(0, 0, 0, 0.32);
 }
 
@@ -203,6 +204,11 @@ textarea {
   color: rgb(189, 187, 187);
   background-color: rgb(36, 35, 35);
 }
+
+#send-btn {
+  margin-top: 2rem;
+}
+
 
 /* player ======================= */
 
@@ -217,7 +223,7 @@ footer {
   background-color: rgb(14, 14, 14);
   color: #fff;
 
-  box-shadow: -1px -4px 9px 0px rgba(0,0,0,0.94);
+  box-shadow: -1px -4px 9px 0px rgba(0, 0, 0, 0.94);
 }
 
 footer p {
@@ -241,6 +247,7 @@ footer a:hover {
   main {
     /* border: 5px solid orange; */
     margin-top: -63rem;
+    overflow-x: hidden;
   }
 
   .boxes {
@@ -261,7 +268,7 @@ footer a:hover {
     order: 4;
   }
 
-    h1 {
+  h1 {
     position: relative;
     top: 2rem;
     left: 5rem;
@@ -309,8 +316,12 @@ footer a:hover {
     left: 0;
   }
 
+  #send-btn {
+    margin-top: 1.5rem;
+  }
+
 }
-  
+
 /* Small devices (landscape phones, less than 768px) */
 @media only screen and (min-width: 768px) {
   main {
@@ -341,7 +352,7 @@ footer a:hover {
   }
 
 }
-  
+
 /* Medium devices (tablets, less than 992px) */
 @media only screen and (min-width: 992px) {
   main {
@@ -365,7 +376,7 @@ footer a:hover {
   }
 
 }
-  
+
 /* Large devices (desktops, less than 1200px) */
 @media only screen and (min-width: 1200px) {
   main {
