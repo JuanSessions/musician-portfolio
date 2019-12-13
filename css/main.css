@@ -150,6 +150,55 @@ main section {
   order: 4;
 }
 
+#event h2 {
+  margin-bottom: 3rem;
+}
+
+.event-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.event-inner-box {
+  margin-left: -3rem;
+}
+
+.event-inner-box h3 {
+  margin-top: -0.5rem;
+}
+
+.event-img {
+  width: 30%;
+  margin-bottom: 3.8rem;
+  box-shadow: 0px 3px 12px 5px rgba(0, 0, 0, 0.64)
+}
+
+.event-btn {
+  display: block;
+  margin-top: 0.8rem;
+  margin-left: auto;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid #000;
+  border-radius: 0.25em;
+  font-size: 0.8rem;
+  color: #fff;
+  background-color: #000;
+  box-shadow: -1px 4px 12px 0px rgba(0, 0, 0, 0.32);
+}
+
+.event-btn:hover {
+  border: none;
+  color: #000;
+  background-color: rgb(158, 151, 151);
+}
+
+.line {
+  display: block;
+  border-top: 1px solid #000;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+
 #contact {
   margin-top: 10rem;
   order: 3;
