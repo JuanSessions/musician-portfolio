@@ -10,7 +10,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
-    </script>
+        </script>
+    <script src="js/scroll.js"></script>
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kanit|Krona+One&display=swap" rel="stylesheet">
@@ -56,8 +57,8 @@
                     </a>
                 </li>
                 <li>
-                    <a id="scroll-down" href="#" title="Scroll down">
-                        <img src="img/thin-arrowheads-pointing-down.png" alt="" width="50" class="nav-icons">
+                    <a href="#footer" title="Scroll down" id="scroll-down">
+                        <img src="img/arrow-down.png" alt="" width="50" class="nav-icons">
                     </a>
                 </li>
             </ul>
@@ -93,6 +94,7 @@
                 </p>
 
                 <button id="info-btn" class="btn">More Info</button>
+
             </section>
 
 
@@ -149,7 +151,35 @@
             <section id="event" class="boxes higher" data-aos="fade-left" data-aos-duration="2000"
                 data-aos-easing="ease-in-circ">
                 <h2>Events</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                <div class="event-content">
+                    <img src="img/event-1.png" alt="" class="event-img">
+                    <div class="event-inner-box">
+                        <h3>Event 1</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <span class="date">25.12.2019 20:30</span> <span class="location">Berlin</span>
+                        <button class="event-btn">get ticket</button>
+                    </div>
+                </div>
+                <span class="line"></span>
+                <div class="event-content">
+                    <img src="img/event-2.png" alt="" class="event-img">
+                    <div class="event-inner-box">
+                        <h3>Event 2</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <span class="date">27.12.2019 23:00</span> <span class="location">Berlin</span>
+                        <button class="event-btn">get ticket</button>
+                    </div>
+                </div>
+                <span class="line"></span>
+                <div class="event-content">
+                    <img src="img/event-3.png" alt="" class="event-img">
+                    <div class="event-inner-box">
+                        <h3>Event 3</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <span class="date">31.12.2019 22:00</span> <span class="location">Berlin</span>
+                        <button class="event-btn">get ticket</button>
+                    </div>
+                </div>
             </section>
 
 
@@ -209,7 +239,7 @@
     </main>
 
     <!-- footer -->
-    <footer>
+    <footer id="footer">
         <p>Built by <a href="https://github.com/natalialexandra" target="_blank"
                 title="visit Natalia on GitHub">Natalia</a> &
             <a href="https://github.com/JuanSessions" target="_blank" title="visit Juan on GitHub">Juan</a></p>
