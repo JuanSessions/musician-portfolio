@@ -33,32 +33,32 @@
             <ul>
                 <li>
                     <a href="#home" title="Home">
-                        <img src="img/home.png" alt="" width="50" height="auto" class="nav-icons">
+                        <img src="img/home.png" alt="home icon" width="50" height="auto" class="nav-icons">
                     </a>
                 </li>
                 <li>
                     <a href="#about" title="About">
-                        <img src="img/about.png" alt="" width="50" class="nav-icons">
+                        <img src="img/about.png" alt="about icon" width="50" class="nav-icons">
                     </a>
                 </li>
                 <li>
                     <a href="#music" title="Music">
-                        <img src="img/music.png" alt="" width="50" class="nav-icons">
+                        <img src="img/music.png" alt="headphone icon" width="50" class="nav-icons">
                     </a>
                 </li>
                 <li>
                     <a href="#event" title="Events">
-                        <img src="img/calendar.png" alt="" width="50" class="nav-icons">
+                        <img src="img/calendar.png" alt="calender icon" width="50" class="nav-icons">
                     </a>
                 </li>
                 <li>
                     <a href="#contact" title="Contact">
-                        <img src="img/envelope.png" alt="" width="50" class="nav-icons">
+                        <img src="img/envelope.png" alt="envelope icon" width="50" class="nav-icons">
                     </a>
                 </li>
                 <li>
                     <a href="#footer" title="Scroll down" id="scroll-down">
-                        <img src="img/arrow-down.png" alt="" width="50" class="nav-icons">
+                        <img src="img/arrow-down.png" alt="arrow icon" width="50" id="arrow-img" class="nav-icons">
                     </a>
                 </li>
             </ul>
@@ -247,10 +247,28 @@
 
     <!-- animation for content boxes-->
     <script>
+        // animation
         AOS.init({
             offset: 120,
             disable: 'mobile'
         });
+
+        // toggle arrow icon
+        const toggleArrow = document.getElementById("scroll-down");
+
+        const toggleImg = () => {
+            const img = document.getElementById("arrow-img");
+            const imgFile = img.src.split('/').pop();
+
+            if (imgFile == "img/arrow-down.png") {
+                img.src = "img/arrow-up.png";
+            } else {
+                img.src = "img/arrow-down.png";
+            }
+        }
+
+        toggleArrow.addEventListener("click", toggleImg);
+
     </script>
 
     <script src="js/aos-animation.js"></script>
