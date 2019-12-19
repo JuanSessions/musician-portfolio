@@ -299,7 +299,6 @@ footer a:hover {
 /* extra small devices (phones, less than 576px) */
 @media only screen and (max-width: 575px) {
   main {
-    /* border: 5px solid orange; */
     margin-top: -63rem;
     overflow-x: hidden;
   }
