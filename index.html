@@ -11,7 +11,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
         </script>
-    <script src="js/scroll.js"></script>
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kanit|Krona+One&display=swap" rel="stylesheet">
@@ -174,6 +173,7 @@
                 <div class="event-content">
                     <img src="img/event-3.png" alt="" class="event-img">
                     <div class="event-inner-box">
+                        <!-- <script src="js/scroll.js"></script> -->
                         <h3>Event 3</h3>
                         <p>Lorem ipsum dolor sit amet.</p>
                         <span class="date">31.12.2019 22:00</span> <span class="location">Berlin</span>
@@ -186,54 +186,51 @@
             <!-- contact -->
             <section id="contact" class="boxes" data-aos="fade-right" data-aos-duration="2000"
                 data-aos-easing="ease-in-circ">
+                <!-- <script src="js/scroll.js"></script> -->
+                <h2>Contact</h2>
 
-                <section class="contact-form">
+                <span class="input input--jiro">
+                    <input class="input__field input__field--jiro" type="text" id="name" />
+                    <label class="input__label input__label--jiro" for="name">
+                        <span class="input__label-content input__label-content--jiro">Name</span>
+                    </label>
+                </span>
 
-                    <h2>Contact</h2>
+                <span class="input input--jiro">
+                    <input class="input__field input__field--jiro" type="text" id="email" />
+                    <label class="input__label input__label--jiro" for="email">
+                        <span class="input__label-content input__label-content--jiro">Email</span>
+                    </label>
+                </span>
 
-                    <span class="input input--jiro">
-                        <input class="input__field input__field--jiro" type="text" id="name" />
-                        <label class="input__label input__label--jiro" for="name">
-                            <span class="input__label-content input__label-content--jiro">Name</span>
-                        </label>
-                    </span>
+                <span class="input input--jiro">
+                    <input class="input__field input__field--jiro" type="text" id="subject" />
+                    <label class="input__label input__label--jiro" for="subject">
+                        <span class="input__label-content input__label-content--jiro">Subject</span>
+                    </label>
+                </span>
 
-                    <span class="input input--jiro">
-                        <input class="input__field input__field--jiro" type="text" id="email" />
-                        <label class="input__label input__label--jiro" for="email">
-                            <span class="input__label-content input__label-content--jiro">Email</span>
-                        </label>
-                    </span>
+                <span class="input input--jiro">
+                    <textarea name="msg" id="" class="input__field input__field--jiro" cols="30" rows="3"></textarea>
 
-                    <span class="input input--jiro">
-                        <input class="input__field input__field--jiro" type="text" id="subject" />
-                        <label class="input__label input__label--jiro" for="subject">
-                            <span class="input__label-content input__label-content--jiro">Subject</span>
-                        </label>
-                    </span>
+                    <label class="input__label input__label--jiro" for="msg">
+                        <span class="input__label-content input__label-content--jiro">Your message ...</span>
+                    </label>
+                </span>
 
-                    <span class="input input--jiro">
-                        <textarea name="msg" id="" class="input__field input__field--jiro" cols="30"
-                            rows="3"></textarea>
+                <button id="send-btn" class="btn">send</button>
 
-                        <label class="input__label input__label--jiro" for="msg">
-                            <span class="input__label-content input__label-content--jiro">Your message ...</span>
-                        </label>
-                    </span>
-
-                    <button id="send-btn" class="btn">send</button>
-
-                    <!-- social media -->
-                    <section id="social-media">
-                        <ul>
-                            <li><i class="fab fa-soundcloud"></i></li>
-                            <li><i class="fab fa-facebook-square"></i></li>
-                            <li><i class="fab fa-twitter-square"></i></li>
-                        </ul>
-                    </section>
+                <!-- social media -->
+                <section id="social-media">
+                    <ul>
+                        <li><i class="fab fa-soundcloud"></i></li>
+                        <li><i class="fab fa-facebook-square"></i></li>
+                        <li><i class="fab fa-twitter-square"></i></li>
+                    </ul>
                 </section>
-
             </section>
+
+        </section>
 
         </section>
     </main>
@@ -255,23 +252,23 @@
 
         // toggle arrow icon
         const toggleArrow = document.getElementById("scroll-down");
+        // a#toggleArrow > img#arrow-img
 
         const toggleImg = () => {
             const img = document.getElementById("arrow-img");
             const imgFile = img.src.split('/').pop();
 
-            if (imgFile == "img/arrow-down.png") {
+            if (imgFile === "arrow-down.png") {
                 img.src = "img/arrow-up.png";
             } else {
                 img.src = "img/arrow-down.png";
             }
-        }
+        };
 
         toggleArrow.addEventListener("click", toggleImg);
 
     </script>
 
-    <script src="js/aos-animation.js"></script>
     <script src="js/audio-player.js"></script>
 </body>
 
