@@ -56,7 +56,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#footer" title="Scroll down" id="scroll-down">
+                    <a href="#footer" title="Scroll down" id="scroll-link">
                         <img src="img/arrow-down.png" alt="arrow icon" width="50" id="arrow-img" class="nav-icons">
                     </a>
                 </li>
@@ -250,22 +250,24 @@
             disable: 'mobile'
         });
 
-        // toggle arrow icon
-        const toggleArrow = document.getElementById("scroll-down");
-        // a#toggleArrow > img#arrow-img
+        // toggle arrow icon and scroll
+        const scrollLink = document.getElementById("scroll-link");
+        // a#scrollLink > img#arrow-img
 
-        const toggleImg = () => {
+        const toggleArrowIcon = () => {
             const img = document.getElementById("arrow-img");
             const imgFile = img.src.split('/').pop();
 
             if (imgFile === "arrow-down.png") {
                 img.src = "img/arrow-up.png";
+                scrollLink.href = "#footer";
             } else {
                 img.src = "img/arrow-down.png";
+                scrollLink.href = "#home";
             }
         };
 
-        toggleArrow.addEventListener("click", toggleImg);
+        scrollLink.addEventListener("click", toggleArrowIcon);
 
     </script>
 
