@@ -1,5 +1,5 @@
 # Musician Portfolio
 
-This is a small project from Juan and Natalia.
+This is a project from Juan and Natalia.
 
-You can check it out on https://natalialexandra.github.io/musician-portfolio/
+You can check it out on https://juansessions.github.io/musician-portfolio/
